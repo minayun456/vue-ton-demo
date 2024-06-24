@@ -1,0 +1,15 @@
+{
+  "hash": "a06c543f",
+  "configHash": "cfc8feb7",
+  "lockfileHash": "d0c82222",
+  "browserHash": "8ea29d35",
+  "optimized": {
+    "@tonconnect/sdk": {
+      "src": "../../../../../node_modules/@tonconnect/sdk/lib/esm/index.mjs",
+      "file": "@tonconnect_sdk.js",
+      "fileHash": "6e2bd606",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
