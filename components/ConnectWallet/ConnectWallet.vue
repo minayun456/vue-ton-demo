@@ -10,7 +10,7 @@
 	import {onLoad} from "@dcloudio/uni-app"
 	import { TonConnect } from '@tonconnect/sdk';
 	
-	const connectedW = ref("");
+	const connectedW = ref("0");
 
 	const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
 	    manifestUrl: 'https://minayun456.github.io/my-twa/tonconnect-manifest.json'
