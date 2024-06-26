@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
-		 <ConnectWallet />
+		<TelegramWebApp />
 	</view>
 </template>
 

@@ -1,6 +1,0 @@
-{
-  "name": "My TonConnect App",
-  "description": "A simple app to connect to TON wallet",
-  "url": "https://<your-domain>",  // 替换为你的实际域名
-  "icons": ["https://<your-domain>/icon.png"]  // 替换为你的实际图标 URL
-}
