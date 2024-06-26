@@ -2,10 +2,7 @@
   <view>
     <button @click="initTelegramWebApp">Initialize Telegram WebApp</button>
     <view>
-      <p>User ID: {{ user.id }}</p>
-      <p>First Name: {{ user.first_name }}</p>
-      <p>Last Name: {{ user.last_name }}</p>
-      <p>Username: {{ user.username }}</p>
+		<p>tel:{{tel}}</p>
     </view>
   </view>
 </template>
@@ -14,11 +11,12 @@
 import { ref } from 'vue';
 
 const user = ref({});
+const tel = ref("false");
 
 const initTelegramWebApp = () => {
     if (window.Telegram && window.Telegram.WebApp) {
+		tel.value = true;
         const tg = window.Telegram.WebApp;
-
         // 获取用户信息
         const initDataUnsafe = tg.initDataUnsafe;
         this.user = initDataUnsafe.user;
