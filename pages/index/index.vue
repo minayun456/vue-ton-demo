@@ -7,10 +7,10 @@
 </template>
 
 <script setup>
-	const openBrowser = ()=>{  
-	    plus.runtime.openURL('https://app.tonkeeper.com/transfer/'
+	const openBrowser = ()=>{ 
+		window.location.href = 'https://app.tonkeeper.com/transfer/'
 			+'0QAKiDdiRH0AQqcdDbrJA0_Adxboy8i4dur_T-fMYYp-oN6C'
-			+'?amount=1000000000&text=abcc');
+			+'?amount=1000000000&text=abcc';
 	    }
 </script>
 
