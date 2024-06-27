@@ -2,11 +2,16 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<TelegramWebApp />
+		<button class="button" @click="openBrowser">付款</button>  
 	</view>
 </template>
 
-<script>
-	
+<script setup>
+	const openBrowser = ()=>{  
+	    plus.runtime.openURL('https://app.tonkeeper.com/transfer/'
+			+'0QAKiDdiRH0AQqcdDbrJA0_Adxboy8i4dur_T-fMYYp-oN6C'
+			+'?amount=1000000000&text=abcc');
+	    }
 </script>
 
 <style>
