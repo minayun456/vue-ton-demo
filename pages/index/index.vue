@@ -2,16 +2,20 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<TelegramWebApp />
-		<button class="button" @click="openBrowser">付款</button>  
+		<button class="button" @click="openPaymentLink">付款</button>  
 	</view>
 </template>
 
-<script setup>
-	const openBrowser = ()=>{ 
-		window.location.href = 'https://app.tonkeeper.com/transfer/'
+<script setup> 
+	const paymentUrl = 'https://app.tonkeeper.com/transfer/'
 			+'0QAKiDdiRH0AQqcdDbrJA0_Adxboy8i4dur_T-fMYYp-oN6C'
 			+'?amount=1000000000&text=abcc';
-	    }
+		
+	const openPaymentLink = () => {
+		    uni.openUrl({
+		          url: paymentUrl
+		        });  
+		}
 </script>
 
 <style>
