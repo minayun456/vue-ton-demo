@@ -12,9 +12,7 @@
 			+'?amount=1000000000&text=abcc';
 		
 	const openPaymentLink = () => {
-		    uni.openUrl({
-		          url: paymentUrl
-		        });  
+		    window.location.href = paymentUrl;
 		}
 </script>
 
